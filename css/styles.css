@@ -168,6 +168,10 @@ input {
     gap: 8px;
 }
 
+.projects__card__actions img {
+    cursor: pointer;
+}
+
 .main__sidebar {
     display: grid;
     gap: 20px;
@@ -256,9 +260,6 @@ input {
 
 /* REMOVE later, after loading asset icons */
 
-.projects__card__actions div{
-    font-size: 2rem;
-}
 
 .icon-temp {
     font-size: 1.2rem;
