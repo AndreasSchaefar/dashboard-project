@@ -147,7 +147,12 @@ input {
     background-color: white;
     border-radius: 6px;
     border-left: 8px solid var(--orange);
+    transition: all .2s ease-in-out;
 }
+
+.projects__card:hover { 
+    transform: scale(1.05);
+}   
 
 
 .projects__card__title {
@@ -206,6 +211,7 @@ input {
     gap: max(8px, 10px, 20px);
     padding: 16px 0;
     align-items: center;
+    cursor: pointer;
 }
 
 .trending .trending__user .avatar-image,
@@ -282,7 +288,12 @@ input {
     outline: none;
     min-width: 86px;
     color: white;
-    background-color: var(--teal    );
+    background-color: var(--teal);
+    cursor: pointer;
+}
+
+.action:hover {
+    opacity: 50%;
 }
 
 /* .sidebar {
@@ -322,7 +333,18 @@ input {
     gap: 16px;
     align-items: center;
     font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
 } 
+
+.link:hover {
+    background-color: black;
+    border-radius: 25px;
+    transform: scale(1.005);
+    background-color: var(--gray);
+    padding: 10px;
+    margin: -10px;
+}
 
 .sidebar__links .outer-links,
 .sidebar__links .account-links {
@@ -330,6 +352,7 @@ input {
     flex-direction: column;
     gap: 20px;
 }
+
 
 .fill-white {
     fill: #ffffff;
